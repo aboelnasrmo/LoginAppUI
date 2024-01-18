@@ -9,7 +9,11 @@ import SwiftUI
 
 struct HomePage: View {
     var body: some View {
-        Text("Home Page")
+        NavigationView {
+            Text("Home Page")
+        }
+        .navigationBarHidden(true)
+
     }
 }
 
