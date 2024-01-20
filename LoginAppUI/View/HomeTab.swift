@@ -9,10 +9,29 @@ import SwiftUI
 
 struct HomeTab: View {
     var body: some View {
-      
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-           
-               
+        
+        VStack {
+            Text("Top Text in VStack")
+                .padding()
+            
+            HStack {
+                Text("Left")
+                Text("Center")
+                Text("Right")
+            }
+            .padding()
+            
+            ZStack {
+                Circle()
+                    .fill(Color.blue)
+                    .frame(width: 100, height: 100)
+                Text("ZStack")
+            }
+            
+            Spacer()
+        }
+        
+        
         
     }
 }
