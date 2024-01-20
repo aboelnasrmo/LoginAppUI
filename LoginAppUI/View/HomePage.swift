@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import RiveRuntime
 
 struct HomePage: View {
     var body: some View {
