@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct LoginAppUIApp: App {
+    @StateObject var viewModel = SignInViewModel()
     var body: some Scene {
         WindowGroup {
-            SignIn()
+            if(viewModel.isAuthenticated){
+                HomePage()
+            }else{
+                SignIn()
+            }
         }
     }
 }
