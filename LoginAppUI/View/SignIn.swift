@@ -21,7 +21,7 @@ struct SignIn: View {
                     .frame(width: 900,height: 900)
                 
                 VStack {
-                    Image("logo")
+                    Image(systemName: "apple.logo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 200, height: 200)
