@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class SignInViewModel: ObservableObject {
     init(){
         
@@ -16,25 +15,33 @@ class SignInViewModel: ObservableObject {
     @Published var password = ""
     @Published var isAuthenticated = false
     @Published var errorMessage = ""
-
+    
     func signIn() {
         print("email: \(email)")
         print("password: \(password)")
-
+        
         // Basic validation
         guard !email.isEmpty, !password.isEmpty else {
             errorMessage = "Email and password cannot be empty."
             return
         }
-
-        // Dummy check for demonstration. Replace with actual authentication logic.
-        if email == "M@m.com" && password == "12" {
-            isAuthenticated = true
-            errorMessage = ""
-            
+        
+        // Regular expression pattern to validate email
+        let emailRegex = #"^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"#
+        if let range = email.range(of: emailRegex, options: .regularExpression), range.lowerBound == email.startIndex && range.upperBound == email.endIndex {
+            // Email is valid
+            if email == "M@m.com" && password == "12" {
+                isAuthenticated = true
+                errorMessage = ""
+            } else {
+                isAuthenticated = false
+                errorMessage = "Invalid email or password."
+            }
         } else {
+            // Invalid email format
+            errorMessage = "Invalid email format."
             isAuthenticated = false
-            errorMessage = "Invalid email or password."
         }
     }
 }
+

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		203C73A12B5B8C0700FC6A7C /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C73A02B5B8C0700FC6A7C /* HomeTab.swift */; };
 		203C73A42B5B8C2200FC6A7C /* SettingsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C73A32B5B8C2200FC6A7C /* SettingsTab.swift */; };
+		203C73A62B5C101A00FC6A7C /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C73A52B5C101A00FC6A7C /* SignUp.swift */; };
+		203C73A82B5C16A400FC6A7C /* TogglePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C73A72B5C16A400FC6A7C /* TogglePassword.swift */; };
 		20B0FEC82B59744200F6E2AA /* LoginAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B0FEC72B59744200F6E2AA /* LoginAppUIApp.swift */; };
 		20B0FECA2B59744200F6E2AA /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B0FEC92B59744200F6E2AA /* SignIn.swift */; };
 		20B0FECC2B59744400F6E2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B0FECB2B59744400F6E2AA /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		203C73A02B5B8C0700FC6A7C /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
 		203C73A32B5B8C2200FC6A7C /* SettingsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTab.swift; sourceTree = "<group>"; };
+		203C73A52B5C101A00FC6A7C /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		203C73A72B5C16A400FC6A7C /* TogglePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePassword.swift; sourceTree = "<group>"; };
 		20B0FEC42B59744200F6E2AA /* LoginAppUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginAppUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B0FEC72B59744200F6E2AA /* LoginAppUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppUIApp.swift; sourceTree = "<group>"; };
 		20B0FEC92B59744200F6E2AA /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 				20B0FED62B5978E900F6E2AA /* Componants */,
 				203C73A02B5B8C0700FC6A7C /* HomeTab.swift */,
 				203C73A32B5B8C2200FC6A7C /* SettingsTab.swift */,
+				203C73A52B5C101A00FC6A7C /* SignUp.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				20B0FEDC2B597F7700F6E2AA /* SignInViewModel.swift */,
+				203C73A72B5C16A400FC6A7C /* TogglePassword.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -181,7 +187,9 @@
 				20B0FEC82B59744200F6E2AA /* LoginAppUIApp.swift in Sources */,
 				20B0FED82B5978F900F6E2AA /* CustomButton.swift in Sources */,
 				20B0FEDA2B597F4D00F6E2AA /* HomePage.swift in Sources */,
+				203C73A62B5C101A00FC6A7C /* SignUp.swift in Sources */,
 				20B0FEDD2B597F7700F6E2AA /* SignInViewModel.swift in Sources */,
+				203C73A82B5C16A400FC6A7C /* TogglePassword.swift in Sources */,
 				203C73A42B5B8C2200FC6A7C /* SettingsTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
