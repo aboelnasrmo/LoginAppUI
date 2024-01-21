@@ -57,18 +57,29 @@ struct SignIn: View {
                         .cornerRadius(10)
                         .padding(.bottom, 20)
                     
-                    CustomButton(title: "Login") {
-                        viewModel.signIn()
-                        if viewModel.isAuthenticated {
-                            isAuthenticated = true
+//                    CustomButton(title: "Login") {
+//                        viewModel.signIn()
+//                        if viewModel.isAuthenticated {
+//                            isAuthenticated = true
+//                        }
+//                    }
+//                    .navigationDestination(isPresented: $isAuthenticated) {
+//                        HomePage()
+//                    }
+//                    .animation(.interactiveSpring, value: 0.5)
+//                    .padding(.bottom, 20)
+                    RiveViewModel(fileName: "button").view()
+                        .frame(width: 400, height: 70)
+                        .overlay(Text("Sign In").foregroundColor(.red))
+                        .onTapGesture {
+                            viewModel.signIn()
+                            if viewModel.isAuthenticated {
+                                isAuthenticated = true
+                            }
                         }
-                    }
-                    .navigationDestination(isPresented: $isAuthenticated) {
-                        HomePage()
-                    }
-                    .animation(.interactiveSpring, value: 0.5)
-                    .padding(.bottom, 20)
-                    
+                        .navigationDestination(isPresented: $isAuthenticated) {
+                            HomePage()
+                        }
                     HStack {
                         Text("Don't have an account?")
                             .font(.system(size: 14))
