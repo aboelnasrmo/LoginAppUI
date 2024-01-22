@@ -80,6 +80,7 @@ struct SignIn: View {
                         .navigationDestination(isPresented: $isAuthenticated) {
                             HomePage()
                         }
+                        .padding(.bottom,20)
                     HStack {
                         Text("Don't have an account?")
                             .font(.system(size: 14))
