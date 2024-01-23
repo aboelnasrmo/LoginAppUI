@@ -93,6 +93,7 @@ struct SignIn: View {
                     
                     Spacer()
                 }
+                .opacity(0.9)
                 .padding()
                 .frame(width: 400, height: 600)
             }
