@@ -13,17 +13,17 @@ struct SignIn: View {
     
     var body: some View {
         NavigationStack {
-           
+            
             ZStack {
-//                Circle()
-//                    .foregroundColor(.red.opacity(0.2))
-//                    .offset(y: -180)
-//                    .frame(width: 900, height: 900)
+                //                Circle()
+                //                    .foregroundColor(.red.opacity(0.2))
+                //                    .offset(y: -180)
+                //                    .frame(width: 900, height: 900)
                 RiveViewModel(fileName: "shapes").view()
                     .ignoresSafeArea()
                     .blur(radius: 30)
-                   
-                    
+                
+                
                 VStack {
                     Image(systemName: "apple.logo")
                         .resizable()
@@ -57,17 +57,17 @@ struct SignIn: View {
                         .cornerRadius(10)
                         .padding(.bottom, 20)
                     
-//                    CustomButton(title: "Login") {
-//                        viewModel.signIn()
-//                        if viewModel.isAuthenticated {
-//                            isAuthenticated = true
-//                        }
-//                    }
-//                    .navigationDestination(isPresented: $isAuthenticated) {
-//                        HomePage()
-//                    }
-//                    .animation(.interactiveSpring, value: 0.5)
-//                    .padding(.bottom, 20)
+                    //                    CustomButton(title: "Login") {
+                    //                        viewModel.signIn()
+                    //                        if viewModel.isAuthenticated {
+                    //                            isAuthenticated = true
+                    //                        }
+                    //                    }
+                    //                    .navigationDestination(isPresented: $isAuthenticated) {
+                    //                        HomePage()
+                    //                    }
+                    //                    .animation(.interactiveSpring, value: 0.5)
+                    //                    .padding(.bottom, 20)
                     RiveViewModel(fileName: "button").view()
                         .frame(width: 400, height: 70)
                         .overlay(Text("Sign In").foregroundColor(.red))
